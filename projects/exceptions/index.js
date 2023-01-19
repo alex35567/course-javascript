@@ -48,7 +48,7 @@ function isAllTrue(array, fn) {
    isSomeTrue([1, 2, 3, 4, 5], n => n > 20) // вернет false
  */
 function isSomeTrue(array, fn) {
-  if (array.length < 1 || array.constructor !== Array) {
+  if (!array.length || !Array.isArray(array)) {
     throw new Error('empty array');
   } else if (typeof fn !== 'function') {
     throw new Error('fn is not a function');
