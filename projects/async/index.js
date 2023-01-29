@@ -40,19 +40,7 @@ const homeworkContainer = document.querySelector('#app');
  https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json
  */
 
-async function loadTowns() {
-  const link = 'https://raw.githubusercontent.com/smelukov/citiesTest/master/cities.json';
-  let result;
-  const response = await fetch(link);
-  if (response.ok) {
-    result = await response.json();
-  } else {
-    throw 'fetch-error';
-  }
-  return await new Promise((resolve) => {
-    resolve(result.sort((a, b) => (a.name > b.name ? 1 : -1)));
-  });
-}
+import { loadAndSortTowns as loadTowns } from './functions.js';
 
 /*
  Функция должна проверять встречается ли подстрока chunk в строке full

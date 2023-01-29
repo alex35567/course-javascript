@@ -10,7 +10,7 @@
  */
 function delayPromise(seconds) {
   return new Promise((resolve) => {
-    setTimeout(() => resolve(), seconds * 1000);
+    setTimeout(resolve, seconds * 1000);
   });
 }
 
@@ -33,7 +33,8 @@ async function loadAndSortTowns() {
   const response = await fetch(link);
   const result = await response.json();
   return await new Promise((resolve) => {
-    resolve(result.sort((a, b) => (a.name > b.name ? 1 : -1)));
+    resolve(result.sort((a, b) => a.name.localeCompare(b.name)));
+    // resolve(result.sort((a, b) => (a.name > b.name ? 1 : -1)));
   });
 }
 
