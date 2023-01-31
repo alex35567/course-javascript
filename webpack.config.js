@@ -71,6 +71,16 @@ module.exports = {
         test: /\.css$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader'],
       },
+      {
+        test: /\.html/,
+        include: [path.resolve(__dirname, 'projects')],
+        use: [
+          { loader: './scripts/html-inject-loader.js' },
+          {
+            loader: 'raw-loader',
+          },
+        ],
+      },
     ],
   },
   plugins: [
