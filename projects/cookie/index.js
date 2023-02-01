@@ -46,7 +46,7 @@ const addButton = homeworkContainer.querySelector('#add-button');
 const listTable = homeworkContainer.querySelector('#list-table tbody');
 
 function GetCookies() {
-  return document.cookie.split('; ').map((val) => {
+  return document.cookie.split(';').map((val) => {
     const [name, value] = val.split('=');
     return { name, value };
   });
@@ -55,6 +55,7 @@ function GetCookies() {
 function fillTable(arrCookies, tableBody) {
   let tableHtml = '';
   arrCookies.forEach((val, i) => {
+    if (val.name === '') return;
     if (
       isMatching(val.name + val.value, filterNameInput.value) ||
       filterNameInput.value === ''
