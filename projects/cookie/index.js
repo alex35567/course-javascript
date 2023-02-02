@@ -55,11 +55,8 @@ function GetCookies() {
 function fillTable(arrCookies, tableBody) {
   let tableHtml = '';
   arrCookies.forEach((val, i) => {
-    if (val.name === '') return;
-    if (
-      isMatching(val.name + val.value, filterNameInput.value) ||
-      filterNameInput.value === ''
-    )
+    if (!val.name) return;
+    if (isMatching(val.name + val.value, filterNameInput.value) || !filterNameInput.value)
       tableHtml =
         tableHtml +
         `<tr><th>${val.name}</th><th>${val.value}</th><th><button id="del-btn${i}">удалить</button></th></tr>`;
@@ -68,7 +65,7 @@ function fillTable(arrCookies, tableBody) {
 }
 
 function isMatching(full, chunk) {
-  return chunk !== '' ? full.toLowerCase().includes(chunk) : false;
+  return chunk ? full.toLowerCase().includes(chunk) : false;
 }
 
 filterNameInput.addEventListener('input', function (e) {
