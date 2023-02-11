@@ -1,0 +1,121 @@
+#map {
+    width: 100%;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+}
+
+.map__ballun {
+    position: relative;    
+    display: flex;
+    flex-direction: column;
+    width: 310px;
+    height: 100%;
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    margin-top: 20px;
+}
+
+.map__reviwes{
+ width: 100%;
+ height: 160px;
+ overflow: auto;
+ margin-top: 20px;
+ margin-bottom: 20px;
+ /* padding-bottom: 20px; */
+ border-bottom: 1px solid rgba(0,0,0,0.1)
+}
+
+.map__item{
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 18px;
+}
+.map__reviwes-desc{
+    color: #8F8F8F;
+}
+.map__form{
+    display: flex;
+    flex-direction: column;    
+    /* gap: 10px; */
+}
+
+.map__header {
+    font-family: 'Arial';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 18px;
+    margin-bottom: 20px;    
+}
+
+.map__input {
+    height: 32px;
+    border: solid 1px #CFCFCF;
+    margin-bottom: 10px;
+}
+
+.map__input:focus {
+    outline: none !important;
+    border: 1px solid #1371C8;
+}
+
+.map__comment {
+    min-height: 92px;
+    margin-bottom: 19px;
+    border: solid 1px #CFCFCF;
+    resize: none;
+}
+
+.map__review:focus {
+    outline: none !important;
+    border: 1px solid #1371C8;
+}
+
+.map__btn {
+    /* margin-bottom: 33px; */
+    width: 107px;
+    height: 38px;
+    font-weight: 700;
+    background-color: #FF8663;
+    border: 0px;
+    color: white;
+    border-radius: 3px;
+}
+
+.map__btn:focus {
+    background-color: white;
+    color: #FF8663;
+    border: solid 1px #FF8663;
+}
+
+/* .map__hint {
+    padding: 20px;
+    min-height: 55px;
+    min-width: 195px;
+    font-size: 20px;
+	line-height: 1;
+	color: #ffffff;
+    background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__balloon {
+	padding: 20px;
+	font-size: 30px;
+	line-height: 1;
+	color: #ffffff;
+	background-color: #f9b43b;
+	background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+	border-radius: 20px;
+}
+
+.map__burger-img {
+	float: right;
+	height: 100px;
+	width: 100px;
+}   */

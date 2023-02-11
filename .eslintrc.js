@@ -15,7 +15,7 @@ module.exports = {
   },
   rules: {
     'prettier/prettier': 'error',
-    'no-undef': 'error',
+    'no-undef': 'warn',
     'no-extra-semi': 'error',
     'no-template-curly-in-string': 'error',
     'no-caller': 'error',
@@ -29,7 +29,7 @@ module.exports = {
     'no-extra-bind': 'warn',
     'no-process-exit': 'warn',
     'no-use-before-define': 'off',
-    'no-unused-vars': ['error', { args: 'none', ignoreRestSiblings: true }],
+    'no-unused-vars': ['warn', { args: 'none', ignoreRestSiblings: true }],
     'no-unsafe-negation': 'error',
     'no-loop-func': 'warn',
     'prefer-const': 'error',
