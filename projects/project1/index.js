@@ -27,10 +27,10 @@ let storage;
 let idxPlacemark = 0;
 
 function showBallunForm(coords) {
-  let s = '';
+  let htmlListInner = '';
   arrReviwes.forEach((el) => {
-    s =
-      s +
+    htmlListInner =
+      htmlListInner +
       `<li class="map__item">${el.name} <span class="map__reviwes-desc">${el.place} ${el.now} <br> ${el.comment}</span> </li>`;
   });
   const htmlList = `<ul class="map__reviwes">` + s + `</ul>`;
