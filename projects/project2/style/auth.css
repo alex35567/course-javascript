@@ -1,0 +1,66 @@
+.auth {
+    /* top: 0; */
+    /* position: absolute; */
+    width: 452px;
+    height: 497px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #17212B;
+    font-family: 'Ubuntu';
+    font-style: normal;
+    font-weight: 400;
+}
+
+.auth__pic {
+    margin-top: 39px;
+    width: 136px;
+    height: 136px;
+    /* border: solid 2px white; */
+}
+
+.auth__title {
+    margin-top: 29px;
+}
+
+.auth__title H1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: white;
+}
+
+.auth__welcome {
+    margin-top: 13px;
+    padding: 0px 100px;
+    text-align: center;
+}
+
+.auth__welcome {
+    color: #7F91A4;
+    font-weight: 400; 
+    font-size: 16px;
+    line-height: 18px;
+}
+
+.auth__form {
+    margin-top: 37px;
+    height: 31px;
+    border-bottom: #465461 1px solid;
+}
+
+.auth__input {
+    width: 298px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 18px;
+    margin-left: 5px;
+    color: #858F98;
+    background-color: #17212B;
+    outline: none !important;
+    border: 0px;
+}
+
+.btn-auth {
+    margin-top: 42px;
+}
